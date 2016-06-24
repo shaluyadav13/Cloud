@@ -1,0 +1,87 @@
+By Lawrence Foley 2/9/2015
+
+Production Settings:
+	url: cloud.nwmissouri.edu
+	-will have another url for uploaded websites
+
+Current Test Server Settings:
+	url: cite.nwmissouri.edu/NWCloudTest/
+	websites url: http://10.1.1.102/
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+By Drew Scott 4/30/14
+
+
+IE9 IE10 IE11 support
+
+Android default web browser no support
+
+Safari support
+
+Firefox support
+
+Chrome support
+
+My videos page - <title> </title> is be overrided in C# somewhere to give a new title of "myVideos".
+
+I chose "Myraid Pro" for the font of the site and the back up font is "Arial" if you feel you would like 
+to change this in the future go for it.
+
+
+
+Login Page - Done
+
+My videos - Sort function does not work, if I had more time I would like to add a grid view / list
+view.  In the future this page could be called My Files and upon login you would see all
+of your files including audio / web projets. The icon in the explorer bar would be a folder
+with text "My Files". Everytime you would click on a file and go deeper into your files a
+icon would be added in the file explorer bar with text saying the tile of that item.
+
+Groups - File explorer needs to be finished.  When you are in a group you should have an icon
+that shows what group you are in next to the My Groups Icon.
+
+
+Upload - Done
+
+Help - The image for the << and >> could stand to be redesigned. Also this help page is from
+the old site/design so the text may be inaccurate, the entire help section needs to be proof 
+read and tested, such as to make sure all the links go to the correct place as things may 
+have changed.
+
+Admin - Editing student groups sometimes displays
+the "Current students" with 0 width showing no names, reason unknown.
+
+
+
+
+ID's for faculty to seperate them from admins / the design and what they see and how they see it
+needs to be done.
+
+
+James I put an image for the default thumbnail image in the images folder as well as a File being converted
+image.
+
+

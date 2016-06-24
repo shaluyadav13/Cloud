@@ -1,0 +1,298 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* unvisited link */
+a:link {
+    color: #243E77;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #243E77;
+    font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+    color: #002EB0;
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    color: #243E77;
+    font-weight: bold;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* needed for container min-height */
+    width: 100%;
+    background: white;
+    font-family: Myarid Pro, arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+
+#container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.videoListBreak {
+    width: 100%;
+    height: 10px;
+    border-bottom: grey thin solid;
+}
+
+
+
+
+/*Keeps elements from moving*/
+#topNavigationContainer {
+    position: fixed;
+    width: calc(100% - 202px);
+    left: 202px;
+}
+/*Keeps left nav from shifting on mobile
+zoom out */
+#leftNavigationContainer {
+    position: fixed;
+}
+
+/* ----------------------------------------- */
+/*Grey Navigation Bar on Left of Page*/
+#navigation {
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    width: 200px;
+    background: #33383E;
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-height: 100%; /* real browsers */
+    border-top: black thin solid;
+    border-right: black thin solid;
+    border-bottom: black thin solid;
+    border-left: black thin solid;
+    overflow: hidden;
+}
+
+#smallNavigation {
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    width: 65px;
+    background: #33383E;
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-height: 100%; /* real browsers */
+    border-top: black thin solid;
+    border-right: black thin solid;
+    border-bottom: black thin solid;
+    border-left: black thin solid;
+    overflow: hidden;
+}
+
+#carrot {
+    position: relative;
+    width: 50px;
+    height: 65px;
+    float: right;
+    margin-top: 50%;
+    display: none;
+}
+
+#carrot2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 50%;
+    display: none;
+}
+
+#fillerBox {
+    width: 60px;
+    height: 385px;
+    display: none;
+}
+
+
+.headingBox {
+    position: relative;
+    display: block;
+    float: left;
+    width: 200px;
+    height: 23px;
+    background-color: #9A9A9A;
+    text-align: left;
+    padding-left: 3px;
+    padding-top: 4px;
+}
+
+.textHolder {
+    padding-left: 10px;
+}
+
+h4 {
+    font-size: 17px;
+    display: inline;
+    font-style: normal;
+    color: white;
+    font-family: Myraid Pro, Arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 14px;
+    font-style: normal;
+    color: white;
+    text-align: right;
+    display: inline;
+    font-family: Myraid Pro, Arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+/* ----------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------- */
+/*Top Bar with NW Logo*/
+#topNavigation {
+    position: relative;
+    width: auto !important;
+    height: 70px;
+    min-width: 275px;
+    border-right: black thin solid;
+    border-bottom: black thin solid;
+    background: #EAEAEA;
+}
+
+
+
+/* NWLOGO */
+#northwestLogo {
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-image: url(../images/nwLogo.png);
+}
+
+
+
+/* ----------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------- */
+
+/*MyFiles BAR*/
+#fileNavigation {
+    position: relative;
+    width: auto !important;
+    height: 50px;
+    border-right: black thin solid;
+    border-bottom: black thin solid;
+    background: #F2F2F2;
+}
+
+#navText {
+    position: absolute;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 400px;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#body1 {
+    margin-left: 202px;
+    background-color: white;
+    overflow: auto;
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: Myriad Pro, Arial, sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+/* SMALL DESKTOP */
+@media only screen and (max-width : 900px) {
+
+
+    #carrot {
+        position: relative;
+        width: 50px;
+        height: 65px;
+        float: right;
+        margin-top: 50%;
+        display: block;
+    }
+
+    #carrot2 {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin-top: 50%;
+        display: block;
+    }
+
+    #fillerBox {
+        width: 60px;
+        height: 405px;
+        display: block;
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-device-width: 900px) {
+    #carrot {
+        position: relative;
+        width: 50px;
+        height: 65px;
+        float: right;
+        margin-top: 50%;
+        display: block;
+    }
+
+    #carrot2 {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin-top: 50%;
+        display: block;
+    }
+
+    #fillerBox {
+        width: 60px;
+        height: 405px;
+        display: block;
+    }
+}

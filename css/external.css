@@ -1,0 +1,1175 @@
+﻿@charset "utf-8";
+
+/* Overall Content CSS */
+
+/* Embed Style: (Class) */
+.PaginationControls {
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 15em;
+    margin: auto
+}
+.PaginationControls a{
+    text-decoration: none;
+}
+.embedCodeStyle {
+    font-size: 11px;
+    color: rgb(1, 71, 49);
+    font-weight: bold;
+    background-color: rgb(200, 200, 200);
+    border: 2px groove;
+    padding: 4px;
+    margin-left: 5px;
+    word-wrap: break-word;
+}
+
+/* unvisited link */
+a:link {
+    color: #243E77;
+    font-weight: bold;
+}
+
+/* visited link */
+a:visited {
+    color: #243E77;
+    font-weight: bold;
+}
+
+/* mouse over link */
+/*a:hover {
+    color: #243E50;
+    font-weight: bold;
+}*/
+
+/* selected link */
+/*a:active {
+    color: #243E77;
+    font-weight: bold;
+}*/
+
+/* CSS Document */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* needed for container min-height */
+    width: 100%;
+    background: white;
+    font-family: Myraid Pro, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/*Contents of page*/
+#container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/*Tells IE not to have border around Iamges*/
+a img {
+    border: none;
+}
+
+/*Make the cursor a "hand" when hovering an image in "OpenImage.aspx"*/
+#image img {
+    cursor: pointer;
+}
+
+
+/*Keeps elements from moving*/
+#topNavigationContainer {
+    position: fixed;
+    /*IE 9 and Up, does not work below IE9*/
+    width: calc(100% - 201px);
+    left: 202px;
+    z-index: 3; /* Keeps the header above content when scrolling */
+}
+/*Keeps left nav from shifting on mobile
+zoom out */
+#leftNavigationContainer {
+    position: fixed;
+}
+
+/* ----------------------------------------- */
+/*Grey Navigation Bar on Left of Page*/
+#navigation {
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    width: 200px;
+    background-color: #006747;
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-height: 100%; /* real browsers */
+    border-top: black thin solid;
+    border-right: black thin solid;
+    border-bottom: black thin solid;
+    border-left: black thin solid;
+    overflow: auto;
+    text-align: center;
+}
+
+#loginIcon {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    margin-bottom: 20px;
+    background-image: url(../images/login.jpg);
+}
+
+#myVideos {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    background-image: url(../images/myMediaWhite.png);
+    background-repeat: no-repeat;
+}
+
+    #myVideos:hover {
+        background-image: url(../images/myMediaGrey.png);
+    }
+
+#groups {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    background-image: url(../images/groupsWhite.png);
+    background-repeat: no-repeat;
+}
+
+    #groups:hover {
+        background-image: url(../images/groupsGrey.png);
+    }
+
+#upload {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    background-image: url(../images/uploadWhite.png);
+    background-repeat: no-repeat;
+}
+
+    #upload:hover {
+        background-image: url(../images/uploadGrey.png);
+    }
+
+#logout {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    background-image: url(../images/LogoutWhite.png);
+    background-repeat: no-repeat;
+}
+
+    #logout:hover {
+        background-image: url(../images/LogoutGrey.png);
+    }
+
+#help {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    background-image: url(../images/helpWhite.png);
+    background-repeat: no-repeat;
+}
+
+    #help:hover {
+        background-image: url(../images/helpGrey.png);
+    }
+
+#admin {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 55px;
+    background-image: url(../images/adminWhite.png);
+    background-repeat: no-repeat;
+}
+
+    #admin:hover {
+        background-image: url(../images/adminGrey.png);
+    }
+
+
+#howtouse {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 20px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+
+#logging {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 20px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+
+#UploadingMedia {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 20px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+}
+
+#PublishingMedia {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 20px;
+    margin-left: 21px;
+    background-repeat: no-repeat;
+}
+
+#Editing {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+#Groups {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+}
+
+/* ----------------------------------------- */
+
+
+/* ----------------------------------------- */
+/*Top Bar with NW Logo*/
+#topNavigation {
+    position: relative;
+    width: auto !important;
+    height: 70px;
+    min-width: 275px;
+    background: #EAEAEA;
+}
+/*Search Bar*/
+#searchBar {
+    position: relative;
+    display: block;
+    float: right;
+    width: 165px;
+    height: 27px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#searchIcon {
+    position: absolute;
+    left: 9em;
+    top: .2em;
+    width: 18px;
+    height: 18px;
+}
+
+
+/* NWLOGO */
+#northwestLogo {
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-image: url(../images/nwLogo.png);
+}
+/* ----------------------------------------- */
+
+
+
+/* ----------------------------------------- */
+
+/*MyFiles BAR*/
+#fileNavigation {
+    position: relative;
+    display: inline-block;
+    width: auto !important;
+    height: 50px;
+    min-width: 100%;
+    border-right: black thin solid;
+    border-bottom: black thin solid;
+    border-top: black thin solid;
+    background: #F8F8F8;
+}
+/*Text in header AKA file explorer bar*/
+#navText {
+    position: absolute;
+    display: inline;
+    margin-top: 15px;
+    margin-left: 8px;
+    width: 290px;
+    height: 40px;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #243E77;
+    font-family: Myraid Pro, Arial, sans-serif;
+}
+
+/*FolderIcon*/
+#explorerBar {
+    position: relative;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+/*Folder Icon in file explorer bar*/
+.imagePlacement {
+    position: absolute;
+    display: inline;
+    margin-top: 4px;
+    Height: 19px;
+    Width: 24px;
+}
+/*Font next to .imagePlacement*/
+.fontPlacement {
+    position: absolute;
+    display: inline;
+    margin-top: 7px;
+    margin-left: 30px;
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-size: 1.25em;
+    text-decoration-color: none;
+    color: #000;
+}
+
+/* -------------------------------------------  */
+
+/*main content area*/
+#body1 {
+    margin-left: 202px;
+    background-color: white;
+    overflow: auto;
+    margin-top: 100px;
+}
+/*main content area used for moving content*/
+#body2 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/* ---------------------------LoginMenu--------------------------------  */
+ul {
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+#middlebar {
+    font-size: 16px;
+    font-family: 'Myriad Pro';
+    color: white;
+    background: #90b557;
+    font-style: normal;
+    padding: 5px;
+    height: 50px;
+    cursor: pointer;
+    /*background:url(../images/loginIcon.png) left top no-repeat;*/
+}
+
+    #middlebar .menu li {
+        height: 50px;
+        float: left;
+        margin-right: 10px;
+    }
+
+        /* This Affects the S# on top right */
+        #middlebar .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            height: 50px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            padding: 12px 26px 0 10px;
+            margin-top: 5px;
+            margin-left: 2px;
+        }
+
+/* This Affects the Dropdown Arrow on top right */
+#middlebar2 {
+    margin-top: 26px;
+    margin-left: 120px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/carrot.png) left top no-repeat;
+}
+
+#middlebar .menu li a:hover {
+    color: grey;
+}
+
+/* This is the code for the Dropdown for the LogOut button */
+
+#middlebar ul .submenu {
+    /*border: groove 2px #105cbe;*/
+    /*border-top:none;*/
+    background: black;
+    position: relative;
+    top: 4px;
+    width: 155px;
+    padding: 6px 0;
+    clear: both;
+    z-index: 2;
+    display: none;
+}
+
+    #middlebar ul .submenu li {
+        background: none;
+        display: block;
+        float: none;
+        margin: 0 6px;
+        border: 0;
+        height: auto;
+        line-height: normal;
+        border-top: solid 1px #DEDEDE;
+    }
+
+#middlebar .submenu li a {
+    background: none;
+    display: block;
+    float: none;
+    padding: 6px 6px;
+    margin: 0;
+    border: 0;
+    height: auto;
+    color: #105cbe;
+    line-height: normal;
+}
+
+    #middlebar .submenu li a:hover {
+        background: #e3edef;
+    }
+
+/*uploadVideo page copyrightbox*/
+.copyright {
+    display: inline-block;
+}
+/*uploadVideo page copyrightbox*/
+.copyright1 {
+    float: left;
+}
+
+/* ---------------------------LoginMenu--------------------------------  */
+
+#mediaList {
+    margin-left: -40px;
+}
+
+    #mediaList li {
+        list-style: none;
+        border-top: 1px solid #000;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #mediaList p {
+        margin-left: 160px;
+    }
+
+    #mediaList .clear {
+        clear: both;
+    }
+
+/*myVideos page generates each video from VideoList.cs*/
+#videoList {
+    margin-left: -40px;
+}
+
+    #videoList li {
+        list-style: none;
+        border-top: 1px solid #000;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #videoList p {
+        margin-left: 160px;
+    }
+
+    #videoList .clear {
+        clear: both;
+    }
+
+
+/*myAudios page */
+#audioList {
+    margin-left: -40px;
+}
+
+    #audioList li {
+        list-style: none;
+        border-top: 1px solid #000;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #audioList p {
+        margin-left: 16px;
+    }
+
+    #audioList .clear {
+        clear: both;
+    }
+
+/*myWebpages page */
+#websiteList {
+    margin-left: -40px;
+}
+
+    #websiteList li {
+        list-style: none;
+        border-top: 1px solid #000;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #websiteList p {
+        margin-left: 16px;
+    }
+
+    #websiteList .clear {
+        clear: both;
+    }
+
+/*myfiles page */
+#fileList {
+    margin-left: -40px;
+}
+
+    #fileList li {
+        list-style: none;
+        border-top: 1px solid #000;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #fileList p {
+        margin-left: 16px;
+    }
+
+    #fileList .clear {
+        clear: both;
+    }
+
+/*MyImages page */
+#imageList {
+    margin-left: -40px;
+}
+
+    #imageList li {
+        list-style: none;
+        border-top: 1px solid #000;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #imageList p {
+        margin-left: 16px;
+    }
+
+    #imageList .clear {
+        clear: both;
+    }
+
+/*Formats uploadVideo page text for desktop/mobile */
+.uploadTextHiddenDesktop {
+    display: inline;
+}
+/*Formats uploadVideo page text for desktop/mobile */
+.uploadTextShowMobile {
+    display: none;
+}
+
+/*Video Play Page*/
+#videoPlayer {
+    width: 70%;
+    max-width: 1280px;
+}
+
+/*----------------Login-Page-------------------------*/
+#loginPage {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 450px;
+    height: 650px;
+}
+
+#loginImage {
+    padding-left: 95px;
+}
+
+#loginPageContent {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 365px;
+    height: 391px;
+    background-image: url(../images/loginscreen.png);
+    overflow: hidden;
+}
+
+#loginInformation {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+#usernameTextBox {
+    margin-bottom: 7px;
+    border: 1px solid #d2d2d2;
+}
+
+    #usernameTextBox:focus {
+        margin-bottom: 7px;
+        border: 1px solid #4a7bc5;
+    }
+
+#passwordTextBox {
+    margin-bottom: 7px;
+    border: 1px solid #d2d2d2;
+}
+
+    #passwordTextBox:focus {
+        margin-bottom: 7px;
+        border: 1px solid #4a7bc5;
+    }
+
+/*----------------Login-Page-------------------------*/
+
+
+/*----------------MyMedia-Page-------------------------*/
+.mymedia {
+    text-decoration: none;
+    /*margin-left: 10%;*/
+}
+
+#media {
+    text-decoration: none;
+}
+/*----------------MyMedia-Page-------------------------*/
+
+
+/*----------------MyImages-Page START-------------------------*/
+.listThumbnail {
+    max-height: 135px;
+    max-width: 180px;
+    float: left;
+    margin-right: 15px;
+}
+
+.mediaListDescription {
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*----------------MyImages-Page END-------------------------*/
+
+/*----------------Upload-Page-------------------------*/
+
+#uploadingSpinnerContainer {
+    display: none;
+    margin-top: -50px;
+    padding-left: 125px;
+}
+
+/*Spinner code*/
+.loading {
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #4A7CC6;
+    border-top: 5px solid #4A7CC6;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -ms-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes
+
+"spin" {
+    from;
+
+{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
+
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes
+
+"spin" {
+    from;
+
+{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
+
+}
+
+@-ms-keyframes
+
+"spin" {
+    from;
+
+{
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+to {
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
+
+}
+
+@-o-keyframes
+
+"spin" {
+    from;
+
+{
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+to {
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
+
+}
+/*----end spinner----*/
+
+/*----------------END Upload-Page-------------------------*/
+
+/*-----------------Edit Group-------------------------*/
+.caretClosedIcon {
+    background-image: url("../images/caretClose.png");
+}
+
+.caretOpenIcon {
+    background-image: url("../images/caretOpen.png");
+}
+
+.caretClosedIcon, #caretOpenIcon {
+    display: inline-block;
+    background-size: 1em 1em;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+
+/*-----------------END Edit Group---------------------*/
+
+
+
+
+/*  --------------------------------------------------------- */
+
+/* SMALL DESKTOP AND MOBILE ARE THE EXTACT SAME CODE IF A CHANGE IS MADE TO ONE MAKE TO OTHER*/
+
+
+
+/* SMALL DESKTOP */
+@media only screen and (max-width : 950px) {
+
+
+
+    /* ----------------------------------------- */
+
+
+    /*Keeps elements from moving*/
+    #topNavigationContainer {
+        position: fixed;
+        width: calc(100% - 67px);
+        left: 67px;
+    }
+
+    /*Grey Navigation Bar on Left of Page*/
+    #navigation {
+        position: fixed;
+        margin-right: auto;
+        width: 65px;
+        background: #006747;
+        height: auto !important; /* real browsers */
+        height: 100%; /* IE6: treaded as min-height*/
+        min-height: 100%; /* real browsers */
+        border-top: black thin solid;
+        border-right: black thin solid;
+        border-bottom: black thin solid;
+        border-left: black thin solid;
+        overflow: hidden;
+    }
+
+    #loginIcon {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 55px;
+        background-image: url(../images/loginIcon.jpg);
+    }
+
+
+    #myVideos {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 55px;
+        background-image: url(../images/myMediaGrey.png);
+        border: none;
+        text-decoration: none;
+    }
+
+        #myVideos:hover {
+            background-image: url(../images/myMediaWhite.png);
+        }
+
+    #groups {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 55px;
+        background-image: url(../images/groupsIconGrey.png);
+    }
+
+        #groups:hover {
+            background-image: url(../images/groupsIconWhite.png);
+        }
+
+    #upload {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 55px;
+        background-image: url(../images/uploadIconGrey.png);
+    }
+
+        #upload:hover {
+            background-image: url(../images/uploadIconWhite.png);
+        }
+
+    #help {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 55px;
+        background-image: url(../images/helpIconGrey.png);
+    }
+
+        #help:hover {
+            background-image: url(../images/helpIconWhite.png);
+        }
+
+    #admin {
+        position: relative;
+        float: left;
+        width: 60px;
+        height: 55px;
+        background-image: url(../images/adminIconGrey.png);
+    }
+
+        #admin:hover {
+            background-image: url(../images/adminIconWhite.png);
+        }
+
+
+    /* ----------------------------------------- */
+
+
+
+    /* ----------------------------------------- */
+    /* Top Bar with NW Logo*/
+    #topNavigation {
+        position: relative;
+        width: auto !important;
+        height: 70px;
+        border-right: black thin solid;
+        background: #EAEAEA;
+    }
+
+
+    /*Search Bar*/
+    #searchBar {
+        position: relative;
+        display: block;
+        float: right;
+        width: 153px;
+        height: 27px;
+        margin-top: 20px;
+        margin-right: 3px;
+    }
+
+    /* ----------------------------------------- */
+
+
+
+
+
+    /* ----------------------------------------- */
+
+    /* MyFiles BAR*/
+    #fileNavigation {
+        position: relative;
+        width: auto !important;
+        height: 45px;
+        border-right: black thin solid;
+        border-bottom: black thin solid;
+        border-top: black thin solid;
+        background: #F2F2F2;
+    }
+    /* ----------------------------------------- */
+
+
+
+    /* ----------------------------------------- */
+    #body1 {
+        margin-left: 67px;
+        background-color: white;
+        overflow: auto;
+        margin-top: 100px;
+    }
+
+
+
+    /* ---------------------------LoginMenu--------------------------------  */
+    ul, li {
+        margin: 0;
+        border: 0;
+        list-style: none;
+    }
+
+    #middlebar {
+        font-size: 16px;
+        font-family: 'Myriad Pro';
+        color: white;
+        background: #90b557;
+        font-style: normal;
+        padding: 5px;
+        height: 50px;
+        cursor: pointer;
+        img;
+        /*background:url(../images/loginIcon.png) left top no-repeat;*/
+    }
+
+        #middlebar .menu li {
+            height: 50px;
+            float: left;
+        }
+
+            #middlebar .menu li a {
+                color: white;
+                text-decoration: none;
+                height: 50px;
+                line-height: 30px;
+                display: block;
+                float: left;
+                padding-left: 0px;
+                padding-top: 10px;
+                margin-left: -40px;
+            }
+
+    #middlebar2 {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #middlebar .menu li a:hover {
+        color: grey;
+    }
+
+    #middlebar ul .submenu {
+        /*border: groove 2px #33383E;
+border-top:none;*/
+        background: black;
+        color: white;
+        position: relative;
+        top: 4px;
+        width: 60px;
+        padding: 2px;
+        clear: both;
+        z-index: 1;
+        display: none;
+        margin-left: -40px;
+        margin-top: 50px;
+    }
+
+        #middlebar ul .submenu li {
+            background: none;
+            display: block;
+            float: none;
+            margin: 0 1px;
+            border: 0;
+            height: auto;
+            line-height: normal;
+            border-top: solid 1px #DEDEDE;
+        }
+
+    #middlebar .submenu li a {
+        background: none;
+        display: block;
+        float: none;
+        padding: 1px 1px;
+        margin: 0;
+        border: 0;
+        height: auto;
+        color: #105cbe;
+        line-height: normal;
+    }
+
+        #middlebar .submenu li a:hover {
+            background: #e3edef;
+        }
+    /*Hide S# on small/mobile */
+    #sNumberHide {
+        display: none;
+    }
+
+
+    /*uploadVideo hide and show content*/
+    .uploadTextHiddenDesktop {
+        display: none;
+    }
+
+    .uploadTextShowMobile {
+        display: inline;
+    }
+
+    /*Video Play Page*/
+    #videoPlayer {
+        width: 95%;
+    }
+
+
+
+    /* ---------------------------LoginMenu--------------------------------  */
+
+
+    /*----------------MyMedia-Page-------------------------*/
+    .mymedia {
+        text-decoration: none;
+        display: block;
+        margin-left: 0px;
+    }
+
+    /*----------------MyMedia-Page-------------------------*/
+
+
+
+    /* ----------------------------------------- */
+
+}
+
+
+
+/*Gets rid of search bar - some pages dont have search bar
+  without this it can cause formating problems when page shrinks*/
+@media only screen and (max-width : 450px) {
+    #searchBar {
+        display: none;
+    }
+}
+/*for mobile*/
+@media only screen and (max-device-width: 450px) {
+
+    #searchBar {
+        display: none;
+    }
+}
+
+
+/*Text-box styling */
+
+/*input:not([type]), input[type="text"] ,textarea {
+    border: 1px solid #c4c4c4;
+    width: 100px;
+    height: 18px;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+
+    input:not([type]), input[type="text"]:focus ,textarea:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }*/

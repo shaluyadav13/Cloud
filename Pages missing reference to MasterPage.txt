@@ -1,0 +1,55 @@
+Pages that reference MasterPage:
+
+admin
+Administrators
+Agreement
+Error
+errorLog
+GroupMedia
+myAudio
+MyFiles
+myGroups_Student
+myGroup_Students - deleted (old page)
+myGroup_Student - deleted (old page)
+MyImages
+myMedia
+myVideos
+MyWebPages
+OpenFile
+OpenImage
+OpenWebsite
+playAudio
+Search
+SelectThumbnail
+status
+StudentGroups
+SwitchLogin
+UploadComplete
+UploadMedia
+
+Fixed:
++PlayVideo
++adminAudioSearch
++adminFileSearch
++AdminImageSearch
++adminSearch
++adminWebSearch
++allVideos
++Default(this deleted as it was an empty file)
++EditAudio
++EditFile
++EditImage
++EditStudentGroup
++EditVideo
++EditWebsite
+
+
+N/A Pages:
+Login
+PlayAid
+PlayVid
+
+
+*****
+also fixed many of the edit media pages titles from "Edit Audio" to their appropriate media type
+

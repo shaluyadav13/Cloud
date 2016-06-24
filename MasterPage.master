@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register TagPrefix="local" Namespace="NorthwestVideo.Controls" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/css/external.css" rel="stylesheet" type="text/css" media="all" runat="server" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <title>Northwest Cloud</title>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+
+            <div id="leftNavigationContainer">
+
+                <div id="navigation">
+
+                    <div id="middlebar" onclick="javascript:showlayer('sm_1')" style="padding-bottom: 13px; border-bottom: solid 4px black; background-color: black;">
+                        <ul class="menu">
+                            <img src="images/loginIcon.png" alt="loginIcon" style="float: left; margin-left: -36px; margin-right: -11px; margin-top: 8px;" />
+                            <li>
+                                <div id="sNumberHide"><a runat="server" id="sNumber" href="/MyMedia.aspx"></a></div>
+                            </li>
+                            <%--     <ul class="submenu" id="sm_1">
+                                <li> 
+                                    <asp:LinkButton ID="logOut" runat="server" OnClick="logOut_Click">Log Out
+                                    </asp:LinkButton> </li>
+                            </ul>--%>
+                        </ul>
+                       <%-- <div id="middlebar2"></div>--%>
+                    </div>
+                    <asp:ContentPlaceHolder ID="leftNav" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <!-- Report Error and User Agreement Buttons -->
+                    <div style="position: absolute; bottom: 0; margin-bottom: 11%; width: 90%;">
+                        <a id="errorReportLink" runat="server" href="" style="color: white; text-decoration: none;">Report Error</a>
+
+                        <br />
+                        <hr size="1" style="width: 50%;" />
+
+                        <a id="userAgreementLink" runat="server" href="" style="color: white; text-decoration: none;">User Agreement</a>
+                    </div>
+                    <!-- End Report Error and User Agreement Buttons -->
+
+
+                </div>
+
+            </div>
+
+            <div id="topNavigationContainer">
+
+
+                <div id="topNavigation">
+
+                    <div id="northwestLogo">
+                    </div>
+
+                    <div id="searchBar" style="visibility:visible;">
+
+                        <asp:TextBox ID="searchBox" runat="server" placeholder="Search" Height="18px" Width="143px" MaxLength="25" OnClick="searchButton_Click" Style="border: solid 1px grey; padding: 4px;" />
+                        <div id="searchIcon">
+                            <asp:ImageButton ID="searchButton" runat="server" Text="Search" Width="18px" Height="18px" ImageUrl="~/images/searchIcon.png" alt="searchIcon" OnClick="searchButton_Click" Style="padding-left: 4px; padding-top: 2.5px; border-left: solid 1px grey;" />
+                        </div>
+                        <asp:Label ID="errorLabel" runat="server" ForeColor="Red" />
+                        <div>
+                            <local:VideoList ID="videoList1" DisplayVideoOwner="True" EnablePaging="True"
+                                EnableSorting="False" runat="server" SelectedPage="1" ItemsPerPage="10" PageDisplayCount="10" />
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="fileNavigation">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+            <div id="body1">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>
+

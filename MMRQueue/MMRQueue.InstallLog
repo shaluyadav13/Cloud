@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\Users\s521818\Desktop\CITE_SVN\NWCloud\trunk\MMRQueue\MMRQueue.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\s521818\Desktop\CITE_SVN\NWCloud\trunk\MMRQueue\MMRQueue.InstallLog
+   assemblypath = C:\Users\s521818\Desktop\CITE_SVN\NWCloud\trunk\MMRQueue\MMRQueue.exe
+Installing service queuelistener...
+Creating EventLog source queuelistener in log Application...
+Rolling back assembly 'C:\Users\s521818\Desktop\CITE_SVN\NWCloud\trunk\MMRQueue\MMRQueue.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\s521818\Desktop\CITE_SVN\NWCloud\trunk\MMRQueue\MMRQueue.InstallLog
+   assemblypath = C:\Users\s521818\Desktop\CITE_SVN\NWCloud\trunk\MMRQueue\MMRQueue.exe
+Restoring event log to previous state for source queuelistener.
